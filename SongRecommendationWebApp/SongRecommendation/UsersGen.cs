@@ -2,6 +2,7 @@
 using SongRecommendation.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,17 +11,20 @@ namespace SongRecommendation
     public class UsersGen
     {
         private readonly ApplicationDbContext _db;
+        private IEnumerable<SongsDb> Songs;
+        IEnumerable<Genre> Genres;
 
         public UsersGen(ApplicationDbContext db)
         {
             _db = db;
+            Songs = _db.SongsDb;
+            Genres = _db.Genres;
         }
 
         public void GenerateUsers ()
         {
             //wczytanie gatunków z bazy do tablicy
-            IEnumerable<SongsDb> Songs = _db.SongsDb;
-            IEnumerable<Genre> Genres = _db.Genres;
+
 
             //wielkosći szacujące częstotliwość wyboru utworu
             //double pop = 6;
@@ -32,8 +36,12 @@ namespace SongRecommendation
             Random idGen = new Random();
             Random gradeGen = new Random();
             int Id = 1;
-            
-            for (int i = 1; i < 101; i++)
+
+            Trace.WriteLine("Tworzenie bazy danych\n\n");
+            Trace.WriteLine("Poniżej zostaną wypisane kolejne id rekordów w bazie \n");
+            Trace.WriteLine("Będą to kolejno: ID, USER ID, SONG ID, RATE");
+
+            for (int i = 1; i < 501; i++)
             {
                 int[] usedId = new int[10];
                 for (int j = 0; j < 10; j++)
@@ -60,9 +68,12 @@ namespace SongRecommendation
                     user.SongId = songId;
                     user.Rate = songGrade;
 
+                    Debug.WriteLine($"{Id}, {i}, {songId}, {songGrade}");
+
                     //zapisanie w bazie obiektu
                     _db.UserRates.Add(user);
                     _db.SaveChanges();
+
                     Id++;
                 }
 
@@ -155,5 +166,26 @@ namespace SongRecommendation
             }
             return grade;
         }
+
+        public IEnumerable<SongsDb> getRandomSongs ()
+        {
+            List<SongsDb> randomSongs = new List<SongsDb>();
+            Random rand = new Random();
+            int[] usedSongs = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                int songId = rand.Next(0, Songs.Count());
+
+                while (usedSongs.Contains<int>(songId))
+                {
+                    songId = rand.Next(0, Songs.Count());
+                }
+
+                var song = _db.SongsDb.Find(Convert.ToInt16(songId));
+                randomSongs.Add(song);
+            }
+            return randomSongs.AsEnumerable();
+        }
     }
 }
+

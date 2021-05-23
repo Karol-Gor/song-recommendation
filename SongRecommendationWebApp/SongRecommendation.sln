@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SongRecommendation", "SongRecommendation\SongRecommendation.csproj", "{1FE073F0-2370-46DE-B7DD-82AC919219F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendation", "SongRecommendation\SongRecommendation.csproj", "{1FE073F0-2370-46DE-B7DD-82AC919219F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recommender", "..\..\..\SongRecommendation\cp-user-behavior-master\User Behavior\Recommender.csproj", "{DB5A3FEF-D18F-4901-9B4F-959E403BD21B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendationML.Model", "SongRecommendationML.Model\SongRecommendationML.Model.csproj", "{ECF5867C-8CFA-4152-AAFA-7CFEE4F14B5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendationML.ConsoleApp", "SongRecommendationML.ConsoleApp\SongRecommendationML.ConsoleApp.csproj", "{151D955A-F155-43B4-B914-654916302C94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5A3FEF-D18F-4901-9B4F-959E403BD21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5A3FEF-D18F-4901-9B4F-959E403BD21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5A3FEF-D18F-4901-9B4F-959E403BD21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5A3FEF-D18F-4901-9B4F-959E403BD21B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF5867C-8CFA-4152-AAFA-7CFEE4F14B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF5867C-8CFA-4152-AAFA-7CFEE4F14B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF5867C-8CFA-4152-AAFA-7CFEE4F14B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF5867C-8CFA-4152-AAFA-7CFEE4F14B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151D955A-F155-43B4-B914-654916302C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151D955A-F155-43B4-B914-654916302C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151D955A-F155-43B4-B914-654916302C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151D955A-F155-43B4-B914-654916302C94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

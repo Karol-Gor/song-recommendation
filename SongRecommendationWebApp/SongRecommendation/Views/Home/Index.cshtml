@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SongRecommendation.Model.Song>
+﻿@model IEnumerable<SongRecommendation.Model.SongsDb>
 <!-- Header -->
 <header class="w3-container w3-pale-blue w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">REKOMENDACJA MUZYKI WEDŁUG GUSTU UŻYTKOWNIKA</h1>
@@ -37,19 +37,15 @@
                     <th>
                         Gatunek
                     </th>
-                    <th>
-                        Nastrój
-                    </th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var song in Model)
                 {
                 <tr>
-                    <td >@song.Author</td>
-                    <td>@song.Name</td>
-                    <td>@song.Genre</td>
-                    <td>@song.Mood</td>
+                    <td >@song.ArtistName</td>
+                    <td>@song.Title</td>
+                    <td>@song.Terms</td>
                 </tr>
                 }
             </tbody>

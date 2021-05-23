@@ -24,9 +24,9 @@ namespace SongRecommendation.Controllers
 
         public IActionResult Index()
         {
-            //UsersGen generator = new UsersGen(_db);
+            UsersGen generator = new UsersGen(_db);
             //generator.GenerateUsers();
-            IEnumerable<Song> objList = _db.Songs;
+            IEnumerable<SongsDb> objList = generator.getRandomSongs();
             return View(objList);
         }
 
