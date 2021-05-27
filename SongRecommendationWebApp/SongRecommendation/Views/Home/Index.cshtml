@@ -1,60 +1,136 @@
-﻿@model IEnumerable<SongRecommendation.Model.SongsDb>
-<!-- Header -->
-<header class="w3-container w3-pale-blue w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">REKOMENDACJA MUZYKI WEDŁUG GUSTU UŻYTKOWNIKA</h1>
-    <p class="w3-xlarge">Wstępna Implentacja Pracy Licencjackiej</p>
-    <a href="#tabela"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Zacznij</button></a>
-</header>
+﻿
+@model SongRecommendation.ViewModels.SongRateViewModel
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Cel aplikacji</h1>
-            <h5 class="w3-padding-32">Celem aplikacji jest zaproponowanie użytkownikowi listy utowrów na podstawie utworów wybranych z listy poniżej</h5>
+        <div class="text-center">
+            <h1 class="display-4">Praca licencjacka</h1>
+            <p>Autor Karol Górecki</p>
         </div>
-    </div>
-</div>
-<div  id="tabela" class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-lg-center w3-center">Utwory do wyboru</h2>
-        </div>
-    </div>
-    <br />
 
-    @if (Model.Count() > 0)
-    {
-        <table class="table table-bordered" style="width:100%">
-            <thead>
-                <tr>
-                    <th>
-                        Autor
-                    </th>
-                    <th>
-                        Nazwa
-                    </th>
-                    <th>
-                        Gatunek
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var song in Model)
+
+
+        <form method="post" asp-action="Create">
+            <div class="container p-3">
+                <div class="row pt-4">
+                    <div class="col-6">
+                        <h2 class="text-primary">Lista utworów do oceny</h2>
+                    </div>
+                </div>
+                <br />
+
+                @if (Model.Songs.Count() > 0)
                 {
-                <tr>
-                    <td >@song.ArtistName</td>
-                    <td>@song.Title</td>
-                    <td>@song.Terms</td>
-                </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>Brak utworów do wyboru</p>
-    }
+                    <table class="table table-bordered table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Autor
+                                </th>
+                                <th>
+                                    Nazwa
+                                </th>
+                                <th>
+                                    Gatunek
+                                </th>
+                                <th>
+                                    Ocena
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(0).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(0).Title</td>
+                                <td>@Model.Songs.ElementAt(0).Terms</td>
+                                <td>
+                                    <select asp-for="Rate0" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(1).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(1).Title</td>
+                                <td>@Model.Songs.ElementAt(1).Terms</td>
+                                <td>
+                                    <select asp-for="Rate1" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(2).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(2).Title</td>
+                                <td>@Model.Songs.ElementAt(2).Terms</td>
+                                <td>
+                                    <select asp-for="Rate2" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(3).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(3).Title</td>
+                                <td>@Model.Songs.ElementAt(3).Terms</td>
+                                <td>
+                                    <select asp-for="Rate3" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(4).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(4).Title</td>
+                                <td>@Model.Songs.ElementAt(4).Terms</td>
+                                <td>
+                                    <select asp-for="Rate4" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(5).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(5).Title</td>
+                                <td>@Model.Songs.ElementAt(5).Terms</td>
+                                <td>
+                                    <select asp-for="Rate5" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(6).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(6).Title</td>
+                                <td>@Model.Songs.ElementAt(6).Terms</td>
+                                <td>
+                                    <select asp-for="Rate6" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(7).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(7).Title</td>
+                                <td>@Model.Songs.ElementAt(7).Terms</td>
+                                <td>
+                                    <select asp-for="Rate7" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(8).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(8).Title</td>
+                                <td>@Model.Songs.ElementAt(8).Terms</td>
+                                <td>
+                                    <select asp-for="Rate8" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Model.Songs.ElementAt(9).ArtistName</td>
+                                <td>@Model.Songs.ElementAt(9).Title</td>
+                                <td>@Model.Songs.ElementAt(9).Terms</td>
+                                <td>
+                                    <select asp-for="Rate9" asp-items="Model.Rating"></select>
+                                </td>
+                            </tr>
 
-</div>
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p>Brak utworów do wyboru</p>
+                }
+
+            </div>
+            <div class="text-center">
+                <input type="submit" class="btn btn-info  w-75" value="Potwierdź" />
+            </div>
+            </form>
+
+
 

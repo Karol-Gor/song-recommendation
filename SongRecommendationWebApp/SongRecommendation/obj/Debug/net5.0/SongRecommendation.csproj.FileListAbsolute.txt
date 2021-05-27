@@ -799,3 +799,4 @@ E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\ref\SongRecommendation.dll
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.pdb
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.genruntimeconfig.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\Razor\Views\Home\Recommend.cshtml.g.cs

@@ -186,6 +186,30 @@ namespace SongRecommendation
             }
             return randomSongs.AsEnumerable();
         }
+
+         public IEnumerable<SongsDb> getSongsToChoose()
+        {
+            List<SongsDb> songs = new List<SongsDb>();
+            string [] releaseIds = new string[10];
+            releaseIds[0] = "SODOLVO12B0B80B2F4";
+            releaseIds[1] = "SOLRYQR12A670215BF";
+            releaseIds[2] = "SOVQWEN12A8C141BD9";
+            releaseIds[3] = "SOGWZBN12A6D4F6AB2";
+            releaseIds[4] = "SOPRXCY12AB0183788";
+            releaseIds[5] = "SOQCUBJ12A8C13FEC6";
+            releaseIds[6] = "SOTNWCI12AAF3B2028";
+            releaseIds[7] = "SONJBQX12A6D4F8382";
+            releaseIds[8] = "SOOXLKF12A6D4F594A";
+            releaseIds[9] = "SOQIDEF12A8C139B23";
+            for (int i =0; i<10; i++)
+            {
+                var song = _db.SongsDb.SingleOrDefault(SongsDb => SongsDb.SongId == releaseIds[i]);
+                songs.Add(song);
+            }
+
+
+            return songs.AsEnumerable();
+        }
     }
 }
 

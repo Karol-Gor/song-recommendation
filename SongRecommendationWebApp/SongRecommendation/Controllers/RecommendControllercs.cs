@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SongRecommendation.Controllers
 {
-    public class AddControllercs : Controller
+    public class RecommendControllercs : Controller
     {
         public IActionResult Index()
         {

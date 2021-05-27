@@ -27,4 +27,8 @@
     <ProjectReference Include="..\SongRecommendationML.Model\SongRecommendationML.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Recommend\" />
+  </ItemGroup>
+
 </Project>
