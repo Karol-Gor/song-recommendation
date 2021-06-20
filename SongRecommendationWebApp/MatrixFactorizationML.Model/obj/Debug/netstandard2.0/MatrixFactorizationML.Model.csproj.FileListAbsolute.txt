@@ -1,0 +1,10 @@
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\bin\Debug\netstandard2.0\MLModel.zip
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\bin\Debug\netstandard2.0\MatrixFactorizationML.Model.deps.json
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\bin\Debug\netstandard2.0\MatrixFactorizationML.Model.dll
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\bin\Debug\netstandard2.0\MatrixFactorizationML.Model.pdb
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.csproj.AssemblyReference.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.AssemblyInfoInputs.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.AssemblyInfo.cs
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.csproj.CoreCompileInputs.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.dll
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\MatrixFactorizationML.Model\obj\Debug\netstandard2.0\MatrixFactorizationML.Model.pdb

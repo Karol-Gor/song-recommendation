@@ -21,14 +21,19 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\SongRecommendationML.Model\SongRecommendationML.Model.csproj" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.Recommender" Version="0.17.5" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Recommend\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MatrixFactorizationML.Model\MatrixFactorizationML.Model.csproj" />
+    <ProjectReference Include="..\SongRecommendationML.Model\SongRecommendationML.Model.csproj" />
+  </ItemGroup>
+
+
 
 </Project>

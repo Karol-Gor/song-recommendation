@@ -13,7 +13,7 @@ namespace SongRecommendationML.ConsoleApp
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"C:\Users\lolek\AppData\Local\Temp\9ad75292-f7ec-4aad-8a47-c4acab1b2b62.tsv";
+        private static string TRAIN_DATA_FILEPATH = @"C:\Users\lolek\AppData\Local\Temp\46878c66-209b-462d-8b17-7272d61e44c9.tsv";
         private static string MODEL_FILEPATH = @"C:\Users\lolek\AppData\Local\Temp\MLVSTools\SongRecommendationML\SongRecommendationML.Model\MLModel.zip";
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
@@ -48,7 +48,7 @@ namespace SongRecommendationML.ConsoleApp
             var dataProcessPipeline = mlContext.Transforms.Conversion.MapValueToKey("UserId", "UserId")
                                       .Append(mlContext.Transforms.Conversion.MapValueToKey("SongId", "SongId"));
             // Set the training algorithm 
-            var trainer = mlContext.Recommendation().Trainers.MatrixFactorization(new MatrixFactorizationTrainer.Options() { NumberOfIterations = 20, LearningRate = 0.1f, ApproximationRank = 8, Lambda = 0.5f, LossFunction = MatrixFactorizationTrainer.LossFunctionType.SquareLossRegression, Alpha = 1f, C = 0.01f, LabelColumnName = "Rate", MatrixColumnIndexColumnName = "UserId", MatrixRowIndexColumnName = "SongId" });
+            var trainer = mlContext.Recommendation().Trainers.MatrixFactorization(new MatrixFactorizationTrainer.Options() { NumberOfIterations = 40, LearningRate = 0.01f, ApproximationRank = 64, Lambda = 0.01f, LossFunction = MatrixFactorizationTrainer.LossFunctionType.SquareLossRegression, Alpha = 1f, C = 0.01f, LabelColumnName = "Rate", MatrixColumnIndexColumnName = "UserId", MatrixRowIndexColumnName = "SongId" });
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
 

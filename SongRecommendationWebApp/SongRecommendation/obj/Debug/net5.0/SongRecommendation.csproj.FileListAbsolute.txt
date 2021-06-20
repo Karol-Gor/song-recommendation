@@ -390,7 +390,6 @@ E:\SongRecommendation\SongRecommendation\bin\Debug\net5.0\Microsoft.EntityFramew
 E:\SongRecommendation\SongRecommendation\obj\Debug\net5.0\Razor\Views\Users\Index.cshtml.g.cs
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\appsettings.Development.json
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\appsettings.json
-E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\MLModel.zip
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendation.exe
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendation.deps.json
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendation.runtimeconfig.json
@@ -766,9 +765,6 @@ E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\runtimes\win-x86\native\MatrixFactorizationNative.dll
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendationML.Model.dll
-E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendationML.Model.pdb
-E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.csprojAssemblyReference.cache
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.GeneratedMSBuildEditorConfig.editorconfig
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.AssemblyInfoInputs.cache
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.AssemblyInfo.cs
@@ -800,3 +796,10 @@ E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.pdb
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.genruntimeconfig.cache
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\Razor\Views\Home\Recommend.cshtml.g.cs
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\Microsoft.ML.dll
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\obj\Debug\net5.0\SongRecommendation.csproj.AssemblyReference.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\MLModel.zip
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\MatrixFactorizationML.Model.dll
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\MatrixFactorizationML.Model.pdb
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendationML.Model.dll
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendation\bin\Debug\net5.0\SongRecommendationML.Model.pdb

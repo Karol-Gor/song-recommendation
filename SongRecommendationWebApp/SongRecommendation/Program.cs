@@ -7,6 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using SongRecommendation.MachineLearning.Common;
+using SongRecommendation.MachineLearning.DataModels;
+using SongRecommendation.MachineLearning.Predictors;
+using SongRecommendation.MachineLearning.Trainers;
+
 namespace SongRecommendation
 {
     public class Program
@@ -15,6 +20,7 @@ namespace SongRecommendation
         {
             CreateHostBuilder(args).Build().Run();
         }
+
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)

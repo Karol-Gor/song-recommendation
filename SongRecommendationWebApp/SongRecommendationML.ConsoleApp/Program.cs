@@ -13,7 +13,7 @@ namespace SongRecommendationML.ConsoleApp
             ModelInput sampleData = new ModelInput()
             {
                 UserId = 1F,
-                SongId = 14F,
+                SongId = 372F,
             };
 
             // Make a single prediction on the sample data and print results

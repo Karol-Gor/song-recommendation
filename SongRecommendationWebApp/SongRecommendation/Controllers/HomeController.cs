@@ -26,8 +26,8 @@ namespace SongRecommendation.Controllers
 
         public IActionResult Index()
         {
-            UsersGen generator = new UsersGen(_db);
-            //generator.GenerateUsers();
+           UsersGen generator = new UsersGen(_db);
+           //generator.GenerateUsers();
 
             IEnumerable<SongsDb> songList = generator.getSongsToChoose();
             var songRate = new SongRateViewModel();
@@ -57,10 +57,12 @@ namespace SongRecommendation.Controllers
             //dodanie do bazy danych obiektu, który został stowrzony na stronie
             //_db.UserRates.Add(obj);
             //_db.SaveChanges();
+
+
             //obj.Songs = new UsersGen(_db).getSongsToChoose();
             //var lastUser = (from u in _db.UserRates
-            //             orderby u.Id descending
-            //             select u).Take(1).SingleOrDefault();
+            //                orderby u.Id descending
+            //                select u).Take(1).SingleOrDefault();
             //var userId = lastUser.UserId + 1;
             //int currentId = lastUser.Id + 1;
             //int[] songIds = new int[10];
@@ -69,7 +71,7 @@ namespace SongRecommendation.Controllers
             //{
             //    UserRate user = new UserRate();
             //    user.UserId = userId;
-            //    user.SongId = chosenSong.ReleaseId;
+            //    user.SongId = chosenSong.Id;
             //    user.Id = currentId;
             //    if (i == 0)
             //    {
@@ -129,22 +131,25 @@ namespace SongRecommendation.Controllers
                             select u).Take(1).SingleOrDefault();
             var LastUserId = lastUser.UserId;
             var top10 = (from s in songList
-                        let p = ConsumeModel.Predict(
-                           new ModelInput()
-                           {
-                               UserId = (float)LastUserId,
-                               SongId = s.ReleaseId
-                           })
-                        orderby p.Score descending
-                        select (SongId: s.ReleaseId, Rate: p.Score)).Take(10);
+                         let p = ConsumeModel.Predict(
+                            new ModelInput()
+                            {
+                                UserId = (float)LastUserId,
+                                SongId = s.Id
+                            })
+                         orderby p.Score descending
+                         select (SongId: s.Id, Rate: p.Score)).Take(10);
             List<SongsDb> recommendedSongs = new List<SongsDb>();
             foreach (var s in top10)
             {
-                var song = _db.SongsDb.SingleOrDefault(SongsDb => SongsDb.ReleaseId == s.SongId);
+                var song = _db.SongsDb.SingleOrDefault(SongsDb => SongsDb.Id == s.SongId);
                 recommendedSongs.Add(song);
-            }    
+            }
+
+            Debug.WriteLine(recommendedSongs.Count.ToString());
 
             return View(recommendedSongs.AsEnumerable());
+            //return View();
         }
 
 

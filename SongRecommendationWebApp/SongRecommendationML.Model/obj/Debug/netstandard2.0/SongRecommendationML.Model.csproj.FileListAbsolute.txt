@@ -2,7 +2,7 @@ E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Mo
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\bin\Debug\netstandard2.0\SongRecommendationML.Model.deps.json
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\bin\Debug\netstandard2.0\SongRecommendationML.Model.dll
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\bin\Debug\netstandard2.0\SongRecommendationML.Model.pdb
-E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\obj\Debug\netstandard2.0\SongRecommendationML.Model.csprojAssemblyReference.cache
+E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\obj\Debug\netstandard2.0\SongRecommendationML.Model.csproj.AssemblyReference.cache
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\obj\Debug\netstandard2.0\SongRecommendationML.Model.AssemblyInfoInputs.cache
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\obj\Debug\netstandard2.0\SongRecommendationML.Model.AssemblyInfo.cs
 E:\GIT docs\song-recommendation\SongRecommendationWebApp\SongRecommendationML.Model\obj\Debug\netstandard2.0\SongRecommendationML.Model.csproj.CoreCompileInputs.cache
