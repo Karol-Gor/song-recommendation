@@ -1,0 +1,10 @@
+E:\GIT docs\song-recommendation\ClassificationML.Model\bin\Debug\netstandard2.0\MLModel.zip
+E:\GIT docs\song-recommendation\ClassificationML.Model\bin\Debug\netstandard2.0\ClassificationML.Model.deps.json
+E:\GIT docs\song-recommendation\ClassificationML.Model\bin\Debug\netstandard2.0\ClassificationML.Model.dll
+E:\GIT docs\song-recommendation\ClassificationML.Model\bin\Debug\netstandard2.0\ClassificationML.Model.pdb
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.csproj.AssemblyReference.cache
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.AssemblyInfoInputs.cache
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.AssemblyInfo.cs
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.csproj.CoreCompileInputs.cache
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.dll
+E:\GIT docs\song-recommendation\ClassificationML.Model\obj\Debug\netstandard2.0\ClassificationML.Model.pdb

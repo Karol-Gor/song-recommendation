@@ -26,11 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Recommend\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MatrixFactorizationML.Model\MatrixFactorizationML.Model.csproj" />
+    <ProjectReference Include="..\..\ClassificationML.Model\ClassificationML.Model.csproj" />
     <ProjectReference Include="..\SongRecommendationML.Model\SongRecommendationML.Model.csproj" />
   </ItemGroup>
 

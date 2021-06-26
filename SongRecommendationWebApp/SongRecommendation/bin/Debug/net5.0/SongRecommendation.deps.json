@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "SongRecommendation/1.0.0": {
         "dependencies": {
-          "MatrixFactorizationML.Model": "1.0.0",
+          "ClassificationML.Model": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.5",
           "Microsoft.EntityFrameworkCore": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
@@ -336,6 +336,30 @@
           "lib/netstandard2.0/Humanizer.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
+      "LightGBM/2.2.3": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/lib_lightgbm.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/lib_lightgbm.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/lib_lightgbm.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/lightgbm.exe": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -958,6 +982,58 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.DataView.dll": {}
+        }
+      },
+      "Microsoft.ML.FastTree/1.5.0-preview2": {
+        "dependencies": {
+          "Microsoft.ML": "1.5.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.5.28711.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libFastTreeNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libFastTreeNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/FastTreeNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.5.28711.2"
+          },
+          "runtimes/win-x86/native/FastTreeNative.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.5.28711.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {}
+        }
+      },
+      "Microsoft.ML.LightGbm/1.5.0-preview2": {
+        "dependencies": {
+          "LightGBM": "2.2.3",
+          "Microsoft.ML": "1.5.5",
+          "Microsoft.ML.FastTree": "1.5.0-preview2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.LightGbm.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.5.28711.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ML.LightGbm.dll": {}
         }
       },
       "Microsoft.ML.Recommender/0.17.5": {
@@ -1969,16 +2045,16 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "MatrixFactorizationML.Model/1.0.0": {
+      "ClassificationML.Model/1.0.0": {
         "dependencies": {
           "Microsoft.ML": "1.5.5",
-          "Microsoft.ML.Recommender": "0.17.5"
+          "Microsoft.ML.LightGbm": "1.5.0-preview2"
         },
         "runtime": {
-          "MatrixFactorizationML.Model.dll": {}
+          "ClassificationML.Model.dll": {}
         },
         "compile": {
-          "MatrixFactorizationML.Model.dll": {}
+          "ClassificationML.Model.dll": {}
         }
       },
       "SongRecommendationML.Model/1.0.0": {
@@ -3694,6 +3770,13 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
+    "LightGBM/2.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HFXul6uz1YWe6orrXz1eJAFvvxYVWag7HG6h4XVubR+epVxaBJWFAprdMlkP4SQ4RxaEibFeO++1OzXc75dJDA==",
+      "path": "lightgbm/2.2.3",
+      "hashPath": "lightgbm.2.2.3.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.5": {
       "type": "package",
       "serviceable": true,
@@ -3959,6 +4042,20 @@
       "sha512": "sha512-O8FW8lFUdd5VRy/mCgSzhEdi8LfStMs00oyI5Yb6RwzRe0EoWFZgcta1oeBvSDRIF8SaAzFUcetKMllLzGRgNg==",
       "path": "microsoft.ml.dataview/1.5.5",
       "hashPath": "microsoft.ml.dataview.1.5.5.nupkg.sha512"
+    },
+    "Microsoft.ML.FastTree/1.5.0-preview2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YORU9USci36Vcy0UhbaQiSZi7qldWgYq90QoYg35wPdzt4iPxLEhXtWubeJD8EA5L47AfxvULu82MBtB+N9cVA==",
+      "path": "microsoft.ml.fasttree/1.5.0-preview2",
+      "hashPath": "microsoft.ml.fasttree.1.5.0-preview2.nupkg.sha512"
+    },
+    "Microsoft.ML.LightGbm/1.5.0-preview2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9v5RsopL2CRUHOlOVhgZX6oaYq5F4dwmXIUXIUnj0nCW8xo57WGSlZ60hYjWnyYvHvjzUSbXF6sDkyKSz7wnZw==",
+      "path": "microsoft.ml.lightgbm/1.5.0-preview2",
+      "hashPath": "microsoft.ml.lightgbm.1.5.0-preview2.nupkg.sha512"
     },
     "Microsoft.ML.Recommender/0.17.5": {
       "type": "package",
@@ -4716,7 +4813,7 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "MatrixFactorizationML.Model/1.0.0": {
+    "ClassificationML.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

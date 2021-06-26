@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendation", "SongRecommendation\SongRecommendation.csproj", "{1FE073F0-2370-46DE-B7DD-82AC919219F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixFactorizationML.Model", "MatrixFactorizationML.Model\MatrixFactorizationML.Model.csproj", "{2F3ECD01-9F38-4275-83DE-B5E93AA45DF2}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendationML.Model", "SongRecommendationML.Model\SongRecommendationML.Model.csproj", "{94DF806F-2111-45CA-A3B1-7C2C5490AB2E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SongRecommendationML.ConsoleApp", "SongRecommendationML.ConsoleApp\SongRecommendationML.ConsoleApp.csproj", "{917872A5-9D09-49E6-B049-A49C733303D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassificationML.Model", "..\ClassificationML.Model\ClassificationML.Model.csproj", "{5CCACA24-4BAD-4DAC-B9BC-78A967BEC8A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE073F0-2370-46DE-B7DD-82AC919219F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F3ECD01-9F38-4275-83DE-B5E93AA45DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F3ECD01-9F38-4275-83DE-B5E93AA45DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F3ECD01-9F38-4275-83DE-B5E93AA45DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F3ECD01-9F38-4275-83DE-B5E93AA45DF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{94DF806F-2111-45CA-A3B1-7C2C5490AB2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94DF806F-2111-45CA-A3B1-7C2C5490AB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94DF806F-2111-45CA-A3B1-7C2C5490AB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{917872A5-9D09-49E6-B049-A49C733303D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{917872A5-9D09-49E6-B049-A49C733303D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{917872A5-9D09-49E6-B049-A49C733303D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCACA24-4BAD-4DAC-B9BC-78A967BEC8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCACA24-4BAD-4DAC-B9BC-78A967BEC8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCACA24-4BAD-4DAC-B9BC-78A967BEC8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCACA24-4BAD-4DAC-B9BC-78A967BEC8A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

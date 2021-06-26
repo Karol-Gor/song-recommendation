@@ -20,6 +20,8 @@ namespace SongRecommendation.ViewModels
         public string Rate8 { get; set; }
         public string Rate9 { get; set; }
 
+        public string algorithm { get; set; }
+
         public List<SelectListItem> Rating { get;} = new List<SelectListItem>
         {
             new SelectListItem { Value = "1", Text = "1" },

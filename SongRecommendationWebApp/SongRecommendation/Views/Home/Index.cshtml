@@ -15,6 +15,21 @@
                         <h2 class="text-primary">Lista utworów do oceny</h2>
                     </div>
                 </div>
+                <p>Wybierz sposób rekomendacji: </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" asp-for="algorithm" id="matrix" value="matrix" checked>
+                    <label class="form-check-label" for="matrix">
+                        Faktoryzacja Macierzy
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" asp-for="algorithm" id="classification" value="classification">
+                    <label class="form-check-label" for="classification">
+                        Klasyfikacja Wieloklasowa
+                    </label>
+                </div>
+
+                <p> </p>
                 <br />
 
                 @if (Model.Songs.Count() > 0)
@@ -117,7 +132,6 @@
                                     <select asp-for="Rate9" asp-items="Model.Rating"></select>
                                 </td>
                             </tr>
-
                         </tbody>
                     </table>
                 }
