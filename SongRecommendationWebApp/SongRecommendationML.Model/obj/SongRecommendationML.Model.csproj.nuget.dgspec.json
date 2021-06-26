@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendation\\SongRecommendation.csproj": {}
+    "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendationML.Model\\SongRecommendationML.Model.csproj": {}
   },
   "projects": {
-    "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendation\\SongRecommendation.csproj": {
+    "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendationML.Model\\SongRecommendationML.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendation\\SongRecommendation.csproj",
-        "projectName": "SongRecommendation",
-        "projectPath": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendation\\SongRecommendation.csproj",
+        "projectUniqueName": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendationML.Model\\SongRecommendationML.Model.csproj",
+        "projectName": "SongRecommendationML.Model",
+        "projectPath": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendationML.Model\\SongRecommendationML.Model.csproj",
         "packagesPath": "C:\\Users\\lolek\\.nuget\\packages\\",
-        "outputPath": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendation\\obj\\",
+        "outputPath": "E:\\GIT docs\\song-recommendation\\SongRecommendationWebApp\\SongRecommendationML.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -25,15 +25,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -44,30 +44,22 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+            "Microsoft.ML": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[1.5.0-preview2, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.ML.Recommender": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[0.17.0-preview2, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
-              "target": "Package",
-              "version": "[1.1.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -80,14 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
